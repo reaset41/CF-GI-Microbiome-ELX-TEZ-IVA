@@ -1,5 +1,9 @@
-# CF-GI-Microbiome-ELX-TEZ-IVA-
+# CF-GI-Microbiome-ELX-TEZ-IVA
 
-Abstract
+TITLE: 
 
-Citation 
+ABSTRACT:
+
+CITATION: 
+
+DATA AVAILABILITY: 
