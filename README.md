@@ -8,7 +8,7 @@
 
 **REPRODUCIBILITY:** All analyses can be reproduced with the processed data tables in the data subdirectory and the RMarkdown file in the code subdirectory.
 
-**CONTRIBUTORS**
+**CONTRIBUTORS:**
 Seth Reasoner, Adam Waalkes, Stephen Salipante, and Maribeth Nicholson contributed to this code.
 
 **CITATION:** TBD
