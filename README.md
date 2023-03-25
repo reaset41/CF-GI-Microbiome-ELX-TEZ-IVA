@@ -5,7 +5,7 @@
 **ABSTRACT:**
 
 **DATA AVAILABILITY:** 
-Raw sequence data can be accessed via BioProject ###. Processed data tables are available within the data subdirectory of this repository. 
+Raw sequence data can be accessed via BioProject PRJNA948536. Processed data tables are available within the data subdirectory of this repository. 
 
 **REPRODUCIBILITY:** 
 All analyses can be reproduced with the processed data tables in the data subdirectory and the RMarkdown file in the code subdirectory.
