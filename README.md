@@ -16,6 +16,6 @@ Seth Reasoner, Adam Waalkes, Stephen Salipante, and Maribeth Nicholson contribut
 **CITATION:** TBD
 
 **REPOSITORY DESCRIPTIONS:** - Bullet list
-  * Data: This repository 
+  * **Data:** This repository 
   
-  * Code: This repository contains an RMarkdown document with representative code for all bioinformatic processing and statistical analyses. 
+  * **Code:** This repository contains an RMarkdown document with representative code for all bioinformatic processing and statistical analyses. 
