@@ -15,7 +15,7 @@ Seth Reasoner, Adam Waalkes, Stephen Salipante, and Maribeth Nicholson contribut
 
 **CITATION:** TBD
 
-**REPOSITORY DESCRIPTIONS:**
+**REPOSITORY DESCRIPTIONS:** - Bullet list
   * Data:
   
   * Code: 
