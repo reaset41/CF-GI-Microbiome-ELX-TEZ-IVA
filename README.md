@@ -1,6 +1,6 @@
 # CF-GI-Microbiome-ELX-TEZ-IVA
 
-**TITLE:** Longitudinal study of the Intestinal Microbiome in Children with Cystic Fibrosis Treated with Elexacaftor-Tezacaftor-Ivacaftor
+**TITLE:** Longitudinal Profiling of the Intestinal Microbiome in Children with Cystic Fibrosis Treated with Elexacaftor-Tezacaftor-Ivacaftor
 
 
 **ABSTRACT:**
