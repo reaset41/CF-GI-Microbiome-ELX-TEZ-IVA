@@ -3,8 +3,6 @@
 **TITLE:** Longitudinal Profiling of the Intestinal Microbiome in Children with Cystic Fibrosis Treated with Elexacaftor-Tezacaftor-Ivacaftor
 
 
-**ABSTRACT:**
-
 **DATA AVAILABILITY:** 
 Raw sequence data can be accessed via BioProject PRJNA948536. Processed data tables are available within the data subdirectory of this repository. 
 
