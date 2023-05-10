@@ -3,7 +3,7 @@ SampleName	"name of stool sample, ""P"" refers to patient number and ""T"" refer
 PatientNumber	Randomly assigned patient number	integer (1-39)	
 TimePoint	timepoint at which stool sample was collected	integer (1-4)	
 Age	Age at the time of stool sample collection		
-AgeCategory	age category at the time of starting ELX/TEZ/IVA age (yrs) 6-11 or 12+	1 or 2	
+AgeCategory	"age category at the time of starting ELX/TEZ/IVA age (yrs) 1 (6-12yo), 2 (12+ yo)"	1 or 2	
 Sex	patient biological sex	M or F	
 F508	number of deltaF508 mutations	1 or 2	
 TakingOtherModulator	taking another CFTR modulator at thee time of stool sample collection	Y or N	
