@@ -159,7 +159,7 @@ metadata <- read.csv("https://raw.githubusercontent.com/reaset41/CF-GI-Microbiom
 
 shannon <- diversity(t(species), index="shannon")
 observed_species <- colSums(species!=0)
-alpha_diversity<-as.data.frame(cbind(shannon, observed))
+alpha_diversity<-as.data.frame(cbind(shannon, observed_species))
 
 ##add metadata for graphs 
 alpha_diversity$Trikafta <- t(metadata[10,])
@@ -174,12 +174,12 @@ shannon_trikafta<-ggplot(alpha_diversity, aes(x=reorder(Trikafta, +shannon), y=s
   geom_jitter(width = 0.15, alpha=0.4, size=3)+
   xlab("")+
   ylim(0,4.5)+
-  scale_color_manual(values=GroupsColors)+
+  scale_color_manual(values=GroupColors)+
   theme(axis.text = element_text(size = 18), axis.title = element_text(size=16),panel.border = element_rect(colour = "black", fill=NA, size=1)
   ) +stat_compare_means(method="wilcox.test")
 
   #Figure 2B
-observed_trikafta <- ggplot(alpha_diversity, aes(x=reorder(Trikafta, +observed), y=observed, color=Trikafta)) +
+observed_trikafta <- ggplot(alpha_diversity, aes(x=reorder(Trikafta, +observed_species),   y=observed_species, color=Trikafta)) +
   geom_boxplot(outlier.shape = NA, size=1, width=.75)+ 
   theme_classic()+ 
   geom_jitter(width = 0.15, alpha=0.4, size=3)+
@@ -187,7 +187,7 @@ observed_trikafta <- ggplot(alpha_diversity, aes(x=reorder(Trikafta, +observed),
   ylim(0,200)+
   scale_color_manual(values=GroupColors)+
   theme(axis.text = element_text(size = 18), axis.title = element_text(size=16),panel.border = element_rect(colour = "black", fill=NA, size=1)
-  ) +stat_compare_means(method="wilcox.test")
+  ) + stat_compare_means(method="wilcox.test")
 
 ##alpha diversity graphs with respect to recent antibiotic exposure
 AbxColors <- c("#003f5c", "#FFA600")
@@ -203,7 +203,7 @@ shannon_recentAbx<-ggplot(alpha_diversity, aes(x=reorder(RecentAbx_binary, +shan
   ) +stat_compare_means(method="wilcox.test")
 
   #Figure 2D
-observed_recentAbx <- ggplot(alpha_diversity, aes(x=reorder(RecentAbx_binary, +observed), y=observed, color=RecentAbx_binary)) +
+observed_recentAbx <- ggplot(alpha_diversity, aes(x=reorder(RecentAbx_binary, +observed_species), y=observed_species, color=RecentAbx_binary)) +
   geom_boxplot(outlier.shape = NA, size=1, width=.75)+ 
   theme_classic()+ 
   geom_jitter(width = 0.15, alpha=0.4, size=3)+
@@ -239,7 +239,7 @@ GroupColors <- c("#CC6677", "#117733")
 bray_Trikafta <- ggplot(pca_df_bray, aes(x = PC1, y = PC2, color=Trikafta)) + 
   geom_point(size=2)+
   stat_ellipse(aes(group=Trikafta))+
-  scale_color_manual(values = GroupsColors)+
+  scale_color_manual(values = GroupColors)+
   theme_classic()+
   theme(axis.text = element_text(size = 16), axis.title =element_text(size=16),
         panel.border = element_rect(colour = "black", fill=NA, size=1)) 
@@ -299,7 +299,7 @@ pca_df_unifrac$Trikafta <- t(metadata[10,])
 unifrac_Trikafta <- ggplot(pca_df_unifrac, aes(x = PC1, y = PC2, color=Trikafta)) + 
   geom_point(size=2)+
   stat_ellipse(aes(group=Trikafta))+
-  scale_color_manual(values = GroupsColors)+
+  scale_color_manual(values = GroupColors)+
   theme_classic()+
   theme(axis.text = element_text(size = 16), axis.title = element_text(size=16),panel.border = element_rect(colour = "black", fill=NA, size=1)) 
 
@@ -352,7 +352,7 @@ denom <- colSums(denominator_rows)
 #MD Index: log[(numerator)/(denominator)]
 MD <- as.data.frame(cbind(num, denom))
 
-MD$index <- log10(MD_counts$num/MD_counts$denom)
+MD$index <- log10(MD$num/MD$denom)
 
 ##add metadata for graph
 MD$Trikafta <- t(metadata[10,])
