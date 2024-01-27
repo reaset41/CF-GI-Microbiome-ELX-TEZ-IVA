@@ -12,7 +12,7 @@ All analyses can be reproduced with the processed data tables in the data subdir
 **CONTRIBUTORS:**
 Seth Reasoner, Adam Waalkes, Stephen Salipante, and Maribeth Nicholson contributed to this code.
 
-**CITATION:** To cite the paper, please use: “Longitudinal Profiling of the Intestinal Microbiome in Children with Cystic Fibrosis Treated with Elexacaftor-Tezacaftor-Ivacaftor”. S.A. Reasoner, R. Bernard, A. Waalkes, K. Penewit, J. Lewis, A.G. Sokolow, R.F. Brown, K.M. Edwards, S.J. Salipante, M. Hadjifrangiskou, M.R. Nicholson. mBio, 2024. doi:10.1128/mbio.01935-23. PMID: 38275294.![image](https://github.com/reaset41/CF-GI-Microbiome-ELX-TEZ-IVA/assets/65308602/d741b381-297d-4a8d-b18b-67a1c02ed9a3)
+**CITATION:** To cite the paper, please use: “Longitudinal Profiling of the Intestinal Microbiome in Children with Cystic Fibrosis Treated with Elexacaftor-Tezacaftor-Ivacaftor”. S.A. Reasoner, R. Bernard, A. Waalkes, K. Penewit, J. Lewis, A.G. Sokolow, R.F. Brown, K.M. Edwards, S.J. Salipante, M. Hadjifrangiskou, M.R. Nicholson. mBio, 2024. doi:10.1128/mbio.01935-23. PMID: 38275294.
 
 
 **REPOSITORY DESCRIPTIONS:**
